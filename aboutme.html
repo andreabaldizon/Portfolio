@@ -5,11 +5,16 @@
   window.alert("Welcome to Andrea's Webpage!");
 </script>
     <h1 style="text-align:center;color:plum;font-family:courier new;">Andrea Baldizon</h1>
-   
-   <img onmouseover="this.style='width:1200px;height:100px;'" src="http://s79f01z693v3ecoes3yyjsg1.wpengine.netdna-cdn.com/wp-content/uploads/2016/10/2016-10-14.jpg" alt="Excelsior District in San Francisco" style="width:50px;height:50px; img-align: center">
-<img onmouseout="this.style='width:600px;height:600px,'" src="http://s79f01z693v3ecoes3yyjsg1.wpengine.netdna-cdn.com/wp-content/uploads/2016/10/2016-10-14.jpg" "img-align: center">
+  <script>
+    function large(x){
+      x.style.height="200px";
+      x.style.width="200px";
+     function normal(x){
+      x.style.height="150px";
+      x.style.width="150px"; 
+   <img onmouseover="large(this)" onmouseout="normal(this)" border = "0" src="http://s79f01z693v3ecoes3yyjsg1.wpengine.netdna-cdn.com/wp-content/uploads/2016/10/2016-10-14.jpg" width="150" height="150" >
 
-                      
+</script>                 
      
 <button type="button"
         onclick"document.getElementById('demo').innerHTML = "My name is Andrea Baldizon. I am sixteen years old, and I am going to be a junior in high school this upcoming fall. I am from San Francsico, and I go to Lick-Wilmerding High School. My family is from El Salvador and Nicaragua."
